@@ -54,9 +54,9 @@ public class Login extends JFrame implements ActionListener{
 
         lRegister = new JLabel("<html><u>Register here</u></html>"); // ใช้ HTML เพื่อขีดเส้นใต้ข้อความ
         lRegister.setFont(new Font("Arial", Font.PLAIN, 14));
-        lRegister.setForeground(Color.BLUE);
+        lRegister.setForeground(Color.BLUE); // เปลี่ยนสีข้อความ
         lRegister.setBounds(260,240,120,30);
-        lRegister.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lRegister.setCursor(new Cursor(Cursor.HAND_CURSOR)); // เปลี่ยนเคอร์เซอร์เมื่อชี้ไปที่ป้าย
         lRegister.addMouseListener(new MouseAdapter() { // เพิ่ม MouseListener
             @Override
             public void mouseClicked(MouseEvent e) { // เมื่อคลิกที่ป้าย Register

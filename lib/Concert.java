@@ -23,7 +23,15 @@ public class Concert extends JFrame implements ActionListener {
     }
 
     private void setComponent() {
-        
+        ImageIcon userIcon = new ImageIcon("./img/ticket.png");
+
+        // ปรับขนาด
+        Image img = userIcon.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
+        userIcon = new ImageIcon(img);
+
+        JLabel lblUser = new JLabel(userIcon);
+        lblUser.setBounds(100, 120, 100, 100);
+        cp.add(lblUser);
     }
 
     private void Finally() {

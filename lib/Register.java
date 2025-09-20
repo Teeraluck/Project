@@ -116,7 +116,7 @@ public class Register extends JFrame implements ActionListener {
             new Login(); // Open the login window
         }
     }
-    private void WriteFile(String text, String text2) { // เขียนไฟล์
+    private void WriteFile(String text1, String text2) { // เขียนไฟล์
         File f = null;
         FileWriter fw = null;
         BufferedWriter bw = null;
@@ -124,7 +124,7 @@ public class Register extends JFrame implements ActionListener {
             f = new File("./File/Register.csv");
             fw = new FileWriter(f,true);
             bw = new BufferedWriter(fw);
-            bw.write(text+","+text2+"\n");
+            bw.write(text1+","+text2+"\n");
         } catch (Exception e) {
             System.out.println(e);
         }
